@@ -32,7 +32,7 @@
 
 // call task 8
 
-// task8();
+task8();
 
 
 function task1() {
@@ -62,4 +62,31 @@ function task3() {
 function task4() {
     const random = Math.random() * (19 - 3) + 3;
     alert(random);
+}
+
+function task5() {
+    const result = 5 + 5 + '5';
+    console.log(result, typeof result);
+}
+
+function task6() {
+    const email = 'vlad@gmail.com';
+    const isValid = email.includes('@');
+    const symbolsQuantity = email.length;
+    console.log(isValid, symbolsQuantity);
+}
+
+function task7() {
+    const a = 'My ';
+    const b = 'name ';
+    const c = 'is ';
+    const fullName = a + b + c + 'Vlad';
+    console.log(fullName)
+}
+
+function task8(){
+    const userName = 'Влад';
+    const payment = 400;
+    const message = `Дякуємо, ${userName}! До сплати ${payment} гривень`;
+    alert(message);
 }
