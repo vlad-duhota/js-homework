@@ -1,13 +1,18 @@
-const username = prompt("Введіть ім'я користувача");
-const password = prompt("Введіть пароль користувача");
+let username = prompt("Введіть ім'я користувача");
+let password = prompt("Введіть пароль користувача");
 const admin_username = 'admin';
-const admin_password = 'admin';
+const admin_password = '12345678';
 
 
-if (username === admin_username && password === admin_password) {
-    alert('Вітаю адміне');
-} else if (username && password && username !== admin_username) {
-    alert(`Вітаю ${username}`)
-} else {
-    alert('Такого користувача не існує')
-}
+let condition = username === admin_username && password === admin_password;
+
+ while (!condition){
+     alert('дані не вірні');
+    username = prompt("Введіть ім'я користувача");
+    password = prompt("Введіть пароль користувача");
+    condition = username === admin_username && password === admin_password;
+ }
+
+ if(condition){
+     alert('Вітаю адміне');
+ }
