@@ -7,7 +7,7 @@ const admin_password = '12345678';
 let condition = username === admin_username && password === admin_password;
 
  while (!condition){
-     alert('дані не вірні');
+    alert('дані не вірні');
     username = prompt("Введіть ім'я користувача");
     password = prompt("Введіть пароль користувача");
     condition = username === admin_username && password === admin_password;
